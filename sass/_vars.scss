@@ -1,4 +1,4 @@
-$bckgd: #01bec0;
+
 //sizes
 $tablet: 'screen and (min-width: 650px)';
 $desktop: 'screen and (min-width: 960px)';
@@ -9,3 +9,20 @@ $hamburger: #999;
 
 //section
 $sec-bckgd: #666;
+
+//font
+$font-color: #1d1731; 
+$font-style: 'IBM Plex Sans', sans-serif; //<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+
+//button
+$bmain-color: #fc3a52;
+$bborder-color: #d66778;
+$bfont-color: #e6e1db;
+
+//background color (gradient type: solid linear)
+$gradient1: #7da7ae; //location 1%
+$gradient2: #99c1d7; //location 34%
+$gradient3: #8db8bc; //location 86%
+$gradient4: #2f3d43; //location 100%
+
+
