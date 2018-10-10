@@ -3,7 +3,7 @@ class Database {
     // Note: specify your own database credentials
     private $host     = "localhost";
 
-    private $db_name  = "db_columbia";
+    private $db_name  = "db_thermosecure";
 
     private $username = "root";
 
