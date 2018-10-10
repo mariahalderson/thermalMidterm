@@ -30,13 +30,17 @@ p {
   font-size: 25px;
 }
 
+.imgspace img {
+  max-width: 100%;
+}
+
 body {
   width: 100%;
 }
 body main {
   max-width: 1240px;
   margin: auto;
-  background: linear-gradient(#7da7ae 1%, #99c1d7 34%, #8db8bc 86%, #2f3d43 100%);
+  background-color: #fff;
 }
 body main header {
   position: fixed;
@@ -228,8 +232,17 @@ body main #order #orderInfo ul li {
   flex-direction: column;
   align-items: center;
 }
+body main #order #orderInfo ul li .icon {
+  display: flex;
+  justify-content: center;
+}
+body main #order #orderInfo ul li .icon i {
+  color: #999;
+  font-size: 50px;
+}
 body main #order #orderInfo ul li p {
   text-align: center;
+  color: #999;
 }
 @media screen and (min-width: 960px) {
   body main #order #orderInfo ul {

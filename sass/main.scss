@@ -32,6 +32,12 @@ p{
     font-size: 25px;
 }
 
+.imgspace{
+    img{
+        max-width: 100%;
+    }
+}
+
 
 
 body{
@@ -40,8 +46,11 @@ body{
     main{
         max-width: 1240px;
         margin: auto;
-        background: linear-gradient($gradient1 1%, $gradient2 34%, $gradient3 86%, $gradient4 100%);
+        //background: linear-gradient($gradient1 1%, $gradient2 34%, $gradient3 86%, $gradient4 100%);
+        background-color: #fff;
 
+
+        
 
         header{
             // height: 55px;
@@ -296,8 +305,20 @@ body{
                         flex-direction: column;
                         align-items: center;
 
+                        .icon{
+                            display: flex;
+                            justify-content: center;
+                            i{
+                                color: #999;
+                                //text-align: center;
+                                font-size: 50px;
+                    
+                            }
+                        }
+
                         p{
                             text-align: center;
+                            color: #999;
                         }
                     }
                 }
