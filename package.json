@@ -1,0 +1,27 @@
+{
+  "name": "thermalmidterm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-sass": "^4.0.1",
+    "i": "^0.3.6",
+    "sass": "^1.14.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariahalderson/thermalMidterm.git"
+  },
+  "author": "Mariah Alderson, Helen Unger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mariahalderson/thermalMidterm/issues"
+  },
+  "homepage": "https://github.com/mariahalderson/thermalMidterm#readme"
+}
