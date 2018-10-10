@@ -4,11 +4,12 @@ $tablet: 'screen and (min-width: 650px)';
 $desktop: 'screen and (min-width: 960px)';
 
 //header
-$header-bckgd: #333;
-$hamburger: #999;
+$header-bckgd: none;
+$hamburger: #1d1731;
 
-//section
-$sec-bckgd: #666;
+//nav
+$nav-bckgd: rgba(255,255,255,0.3);
+$nav-links: #1d1731;
 
 //font
 $font-color: #1d1731; 
@@ -24,5 +25,9 @@ $gradient1: #7da7ae; //location 1%
 $gradient2: #99c1d7; //location 34%
 $gradient3: #8db8bc; //location 86%
 $gradient4: #2f3d43; //location 100%
+
+//footer background
+$footer1: rgba(0,0,0,0.8); //location 1%
+$footer2: rgba(0,0,0,0.0); //location 100%
 
 
