@@ -1,0 +1,59 @@
+@import 'vars';
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.hide{
+    display: none;
+}
+
+body{
+    width: 100%;
+
+    main{
+        max-width: 1240px;
+        margin: auto;
+
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+
+            #hamburger{
+                width: 30px;
+                height: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
+
+                .hamburger-line{
+                    width: 30px;
+                    height: 4px;
+                    background-color: #000;
+                    transition: all 0.3s linear;
+                }
+
+                .line1.change{
+                    transform: rotate(135deg) translate(10px, -12px);
+                }
+
+                .line2.change{
+                    transform: rotate(225deg) translate(-2px, -2px);
+                }
+
+                .line3.change{
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+            }
+
+            #mainNavigation{
+                display: none;
+            }
+        }
+    }
+}
