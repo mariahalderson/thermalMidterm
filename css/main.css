@@ -1,105 +1,244 @@
-/*
-Error: Undefined variable: "$bckgd".
-        on line 88 of sass/main.scss
+* {
+  padding: 0;
+  margin: 0;
+}
 
-83: 
-84:             #mainNavigation{
-85:                 height: 0;
-86:                 width: 100%;
-87:                 opacity: 0;
-88:                 background-color: $bckgd;
-89:                 transition: all 0.4s ease-out;
-90:                 position: fixed;
-91:                 z-index: 10;
-92:                 top: 0;
-93:             }
+.hide {
+  display: none;
+}
 
-Backtrace:
-sass/main.scss:88
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:440:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:440:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:440:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:440:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$bckgd\".\A         on line 88 of sass/main.scss\A \A 83: \A 84:             #mainNavigation{\A 85:                 height: 0;\A 86:                 width: 100%;\A 87:                 opacity: 0;\A 88:                 background-color: $bckgd;\A 89:                 transition: all 0.4s ease-out;\A 90:                 position: fixed;\A 91:                 z-index: 10;\A 92:                 top: 0;\A 93:             }"; }
+.imgspace {
+  max-width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.content {
+  padding: 25px 35px;
+}
+
+p {
+  font-size: 18px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.sub-title {
+  font-size: 25px;
+}
+
+body {
+  width: 100%;
+}
+body main {
+  max-width: 1240px;
+  margin: auto;
+  background: linear-gradient(#7da7ae 1%, #99c1d7 34%, #8db8bc 86%, #2f3d43 100%);
+}
+body main header {
+  position: fixed;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: none;
+}
+body main header #logo {
+  width: 250px;
+  overflow: hidden;
+}
+body main header #logo img {
+  max-width: 100%;
+}
+body main header #hamburger {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 11;
+  cursor: pointer;
+}
+body main header #hamburger .hamburger-line {
+  width: 30px;
+  height: 4px;
+  background-color: #1d1731;
+  transition: all 0.3s linear;
+}
+body main header #hamburger .line1.change {
+  transform: rotate(135deg) translate(10px, -12px);
+}
+body main header #hamburger .line2.change {
+  transform: rotate(225deg) translate(-2px, -2px);
+}
+body main header #hamburger .line3.change {
+  opacity: 0;
+  transform: translateY(20px);
+}
+body main header #mainNavigation {
+  height: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.4s ease-out;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+}
+body main header #mainNavigation ul {
+  list-style-type: none;
+  display: block;
+  width: 50%;
+  margin: 50px auto;
+}
+body main header #mainNavigation ul li {
+  color: #1d1731;
+  text-align: center;
+  font-size: 25px;
+  font-family: "IBM Plex Sans", sans-serif;
+  margin-top: 20px;
+}
+body main header #mainNavigation.change {
+  height: 50vh;
+  opacity: 1 !important;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+@media screen and (min-width: 960px) {
+  body main #hero {
+    display: grid;
+  }
+  body main #hero #heroImg-area {
+    grid-column: 1/-1;
+    grid-row-start: 1;
+  }
+  body main #hero #hero-content {
+    grid-column: 1/-1;
+    grid-row-start: 1;
+    place-self: center start;
+  }
+}
+body main #features {
+  margin-top: 100px;
+}
+body main #features ul {
+  list-style-type: none;
+}
+body main #features ul li {
+  margin-top: 15px;
+}
+@media screen and (min-width: 960px) {
+  body main #features {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  body main #features .title {
+    grid-column: 1/-1;
+    text-align: center;
+  }
+  body main #features #features-content {
+    grid-column: 1/-1;
+    grid-row-start: 2;
+    display: grid;
+    grid-template-columns: inherit;
+  }
+  body main #features #features-content #features-list {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: inherit;
+  }
+  body main #features #features-content #features-list ul {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: inherit;
+    place-items: center center;
+  }
+  body main #features #features-content #features-list ul li {
+    max-width: 250px;
+  }
+  body main #features #features-content #features-list ul li:nth-child(1), body main #features #features-content #features-list ul li:nth-child(2), body main #features #features-content #features-list ul li:nth-child(3) {
+    grid-column: 1/2;
+  }
+  body main #features #features-content #features-list ul li:nth-child(4), body main #features #features-content #features-list ul li:nth-child(5), body main #features #features-content #features-list ul li:nth-child(6) {
+    grid-column: 3/4;
+    place-self: center center;
+  }
+  body main #features #features-content #features-list ul li:nth-child(1), body main #features #features-content #features-list ul li:nth-child(4) {
+    grid-row-start: 1;
+  }
+  body main #features #features-content #features-list ul li:nth-child(2), body main #features #features-content #features-list ul li:nth-child(5) {
+    grid-row-start: 2;
+  }
+  body main #features #features-content #features-list ul li:nth-child(3), body main #features #features-content #features-list ul li:nth-child(6) {
+    grid-row-start: 3;
+  }
+  body main #features #featuresImg-area {
+    grid-row-start: 2;
+    z-index: 3;
+    grid-column: 2/3;
+  }
+}
+body main #colours #colour-select {
+  margin: auto;
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body main #colours #colour-select ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+body main #colours #colour-select ul li .colour-block {
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+}
+body main #order {
+  margin-top: 100px;
+  background: linear-gradient(rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.8) 80%);
+}
+body main #order .button {
+  display: block;
+  margin: auto;
+  width: 350px;
+  text-align: center;
+  text-decoration: none;
+  font-family: "IBM Plex Sans", sans-serif;
+  padding: 15px 35px;
+  background-color: #fc3a52;
+  border-radius: 10px;
+  border: 8px solid #d66778;
+  color: #e6e1db;
+  margin-bottom: 100px;
+}
+body main #order #orderInfo {
+  margin: auto;
+}
+body main #order #orderInfo ul {
+  list-style-type: none;
+}
+body main #order #orderInfo ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main #order #orderInfo ul li p {
+  text-align: center;
+}
+@media screen and (min-width: 960px) {
+  body main #order #orderInfo ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75%;
+    margin: auto;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
