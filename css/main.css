@@ -16,13 +16,13 @@ body main {
 }
 body main header {
   display: flex;
-  justify-content: space-between;
   padding: 15px 0;
 }
 body main header #hamburger {
   width: 30px;
   height: 30px;
   display: flex;
+  justify-self: flex-end;
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
@@ -44,7 +44,14 @@ body main header #hamburger .line3.change {
   transform: translateY(20px);
 }
 body main header #mainNavigation {
-  display: none;
+  height: 0;
+  opacity: 0;
+  background-color: #01bec0;
+  transition: all 0.4s ease-out;
+}
+body main header #mainNavigation.change {
+  height: 50vh;
+  opacity: 1 !important;
 }
 
 /*# sourceMappingURL=main.css.map */
