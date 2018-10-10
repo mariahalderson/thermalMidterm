@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Oct 10, 2018 at 05:46 PM
+-- Generation Time: Oct 10, 2018 at 09:42 PM
 -- Server version: 5.7.21
 -- PHP Version: 7.2.4
 
@@ -81,8 +81,7 @@ DROP TABLE IF EXISTS `tbl_product`;
 CREATE TABLE IF NOT EXISTS `tbl_product` (
   `product_id` smallint(6) NOT NULL AUTO_INCREMENT,
   `product_name` varchar(100) NOT NULL,
-  `product_color` tinyint(4) NOT NULL,
-  `product_price` varchar(100) NOT NULL,
+  `tagline` varchar(200) NOT NULL,
   PRIMARY KEY (`product_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
@@ -90,8 +89,8 @@ CREATE TABLE IF NOT EXISTS `tbl_product` (
 -- Dumping data for table `tbl_product`
 --
 
-INSERT INTO `tbl_product` (`product_id`, `product_name`, `product_color`, `product_price`) VALUES
-(1, 'ThermoSecure', 1, '399.99');
+INSERT INTO `tbl_product` (`product_id`, `product_name`, `tagline`) VALUES
+(1, 'ThermoSecure', 'Complete Control.');
 
 -- --------------------------------------------------------
 
