@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.imgspace {
+  max-width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.content {
+  padding: 25px 35px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.sub-title {
+  font-size: 25px;
+}
+
+body {
+  width: 100%;
+}
+body main {
+  max-width: 1240px;
+  margin: auto;
+}
+body main header {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #333;
+}
+body main header #hamburger {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 11;
+  cursor: pointer;
+}
+body main header #hamburger .hamburger-line {
+  width: 30px;
+  height: 4px;
+  background-color: #999;
+  transition: all 0.3s linear;
+}
+body main header #hamburger .line1.change {
+  transform: rotate(135deg) translate(10px, -12px);
+}
+body main header #hamburger .line2.change {
+  transform: rotate(225deg) translate(-2px, -2px);
+}
+body main header #hamburger .line3.change {
+  opacity: 0;
+  transform: translateY(20px);
+}
+body main header #mainNavigation {
+  height: 0;
+  width: 100%;
+  opacity: 0;
+  background-color: #01bec0;
+  transition: all 0.4s ease-out;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+}
+body main header #mainNavigation.change {
+  height: 50vh;
+  opacity: 1 !important;
+}
+body main #features ul {
+  list-style-type: none;
+}
+body main #features ul li {
+  margin-top: 15px;
+}
+body main #colours #colour-select {
+  margin: auto;
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body main #colours #colour-select .colour-block {
+  width: 30px;
+  height: 30px;
+}
+body main #order #orderInfo {
+  margin: auto;
+}
+body main #order #orderInfo ul {
+  list-style-type: none;
+}
+body main #order #orderInfo ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main #order #orderInfo ul li p {
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */

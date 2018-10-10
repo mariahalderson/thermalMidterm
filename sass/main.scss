@@ -1,0 +1,166 @@
+@import 'vars';
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.hide{
+    display: none;
+}
+
+.imgspace{
+    max-width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.content{
+    padding: 25px 35px;
+}
+
+p{
+    font-size: 18px;
+}
+
+.title{
+    font-size: 30px;
+}
+
+.sub-title{
+    font-size: 25px;
+}
+
+
+
+body{
+    width: 100%;
+
+    main{
+        max-width: 1240px;
+        margin: auto;
+
+
+        header{
+            // height: 55px;
+            max-width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            background-color: $header-bckgd;
+
+            #hamburger{
+                width: 30px;
+                height: 30px;
+                display: flex;
+                //justify-self: flex-end;
+                flex-direction: column;
+                justify-content: space-between;
+                position: relative;
+                z-index: 11;
+                cursor: pointer;
+
+                .hamburger-line{
+                    width: 30px;
+                    height: 4px;
+                    background-color:$hamburger;
+                    transition: all 0.3s linear;
+                }
+
+                .line1.change{
+                    transform: rotate(135deg) translate(10px, -12px);
+                }
+
+                .line2.change{
+                    transform: rotate(225deg) translate(-2px, -2px);
+                }
+
+                .line3.change{
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+            }
+
+            #mainNavigation{
+                height: 0;
+                width: 100%;
+                opacity: 0;
+                background-color: $bckgd;
+                transition: all 0.4s ease-out;
+                position: fixed;
+                z-index: 10;
+                top: 0;
+            }
+
+            #mainNavigation.change{
+                height: 50vh;
+                opacity: 1 !important;
+            }
+        }
+
+
+//------------------------------
+//-------HERO SECTION-----------
+//------------------------------
+
+//------------------------------
+//------FEATURES SECTION--------
+//------------------------------
+
+        #features{
+            ul{
+                list-style-type: none;
+
+                li{
+                    margin-top: 15px;
+                }
+            }
+        }
+
+//------------------------------
+//-------COLOURS SECTION--------
+//------------------------------
+
+        #colours{
+            
+            #colour-select{
+                margin: auto;
+                width: 150px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .colour-block{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+
+
+//------------------------------
+//-------ORDER SECTION----------
+//------------------------------
+
+        #order{
+
+            #orderInfo{
+                margin: auto;
+
+                ul{
+                    list-style-type: none;
+
+                    li{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        p{
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
