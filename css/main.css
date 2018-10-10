@@ -83,11 +83,66 @@ body main header #mainNavigation.change {
   height: 50vh;
   opacity: 1 !important;
 }
+@media screen and (min-width: 960px) {
+  body main #hero {
+    display: grid;
+  }
+  body main #hero #heroImg-area {
+    grid-column: 1/-1;
+    grid-row-start: 1;
+  }
+  body main #hero #hero-content {
+    grid-column: 1/-1;
+    grid-row-start: 1;
+  }
+}
 body main #features ul {
   list-style-type: none;
 }
 body main #features ul li {
   margin-top: 15px;
+}
+@media screen and (min-width: 960px) {
+  body main #features {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  body main #features #features-content {
+    grid-column: 1/-1;
+    grid-row-start: 2;
+    display: grid;
+    grid-template-columns: inherit;
+  }
+  body main #features #features-content #features-list {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: inherit;
+  }
+  body main #features #features-content #features-list ul {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: inherit;
+  }
+  body main #features #features-content #features-list ul li:nth-child(1), body main #features #features-content #features-list ul li:nth-child(2), body main #features #features-content #features-list ul li:nth-child(3) {
+    grid-column: 1/2;
+  }
+  body main #features #features-content #features-list ul li:nth-child(4), body main #features #features-content #features-list ul li:nth-child(5), body main #features #features-content #features-list ul li:nth-child(6) {
+    grid-column: 3/4;
+  }
+  body main #features #features-content #features-list ul li:nth-child(1), body main #features #features-content #features-list ul li:nth-child(4) {
+    grid-row-start: 1;
+  }
+  body main #features #features-content #features-list ul li:nth-child(2), body main #features #features-content #features-list ul li:nth-child(5) {
+    grid-row-start: 2;
+  }
+  body main #features #features-content #features-list ul li:nth-child(3), body main #features #features-content #features-list ul li:nth-child(6) {
+    grid-row-start: 3;
+  }
+  body main #features #featuresImg-area {
+    grid-row-start: 2;
+    z-index: 3;
+    grid-column: 2/3;
+  }
 }
 body main #colours #colour-select {
   margin: auto;
