@@ -13,11 +13,11 @@ type 'npm install' into the root folder terminal
 - gulp
 
 ## Authors
-* Mariah Alderson
-* Helen Unger
-* Caitlin MacKay
-* Aisana Ungarsynova
-* Dave estanol
+* Mariah Alderson - frontend dev
+* Helen Unger - backend dev
+* Caitlin MacKay - 3D designer
+* Aisana Ungarsynova - designer
+* Dave Estanol - designer
 
 ## License
 
