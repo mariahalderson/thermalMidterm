@@ -102,7 +102,21 @@ body{
 //------------------------------
 //-------HERO SECTION-----------
 //------------------------------
+        #hero{
+            @media #{$desktop}{
+                display: grid;
 
+                #heroImg-area{
+                    grid-column: 1 / -1;
+                    grid-row-start: 1;
+                }
+
+                #hero-content{
+                    grid-column: 1 / -1;
+                    grid-row-start: 1;
+                }
+            }
+        }
 //------------------------------
 //------FEATURES SECTION--------
 //------------------------------
@@ -115,6 +129,65 @@ body{
                     margin-top: 15px;
                 }
             }
+
+            @media #{$desktop}{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+
+                    .title{
+                        grid-column: 1 / -1;
+                        text-align: center;
+                    }
+
+                    #features-content{
+                        grid-column: 1 / -1;
+                        grid-row-start: 2;
+                        display: grid;
+                        grid-template-columns: inherit;
+                    
+                        #features-list{
+                            grid-column: 1 / -1;
+                            display: grid;
+                            grid-template-columns: inherit;
+                            ul{
+                                grid-column: 1 / -1;
+                                display: grid;
+                                grid-template-columns: inherit;
+
+                                li{
+                                    &:nth-child(1), &:nth-child(2), &:nth-child(3){
+                                        grid-column: 1 / 2;
+                                        place-self: center center;
+                                    }
+
+                                    &:nth-child(4), &:nth-child(5), &:nth-child(6){
+                                        grid-column: 3 / 4;
+                                        place-self: center center;
+                                    }
+
+                                    &:nth-child(1), &:nth-child(4){
+                                        grid-row-start: 1;
+                                    }
+
+                                    &:nth-child(2), &:nth-child(5){
+                                        grid-row-start: 2;
+                                    }
+
+                                    &:nth-child(3), &:nth-child(6){
+                                        grid-row-start: 3;
+                                    }
+                                }
+                            }
+                        }
+                    }
+               
+
+                #featuresImg-area{
+                    grid-row-start: 2;
+                    z-index: 3;
+                    grid-column: 2 / 3;
+                }
+            }
         }
 
 //------------------------------
@@ -125,15 +198,30 @@ body{
             
             #colour-select{
                 margin: auto;
-                width: 150px;
+                width: 75%;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
 
-                .colour-block{
-                    width: 30px;
-                    height: 30px;
+                ul{
+                    list-style-type: none;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    li{
+
+                        .colour-block{
+                            width: 30px;
+                            height: 30px;
+                            background-color: #000;
+                        }
+
+                    }
                 }
+
+               
             }
         }
 
@@ -158,6 +246,20 @@ body{
                         p{
                             text-align: center;
                         }
+                    }
+                }
+            }
+
+            @media #{$desktop}{
+                #orderInfo{
+
+                    ul{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        width: 75%;
+                        margin: auto;
+                        
                     }
                 }
             }
